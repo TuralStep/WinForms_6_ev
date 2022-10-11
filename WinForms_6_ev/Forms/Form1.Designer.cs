@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_movieName = new System.Windows.Forms.TextBox();
             this.btn_searchMovie = new System.Windows.Forms.Button();
+            this.txt_movieName = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.pnl_movies = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -46,8 +46,29 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 62);
+            this.panel1.Size = new System.Drawing.Size(984, 62);
             this.panel1.TabIndex = 0;
+            // 
+            // btn_searchMovie
+            // 
+            this.btn_searchMovie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_searchMovie.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btn_searchMovie.Location = new System.Drawing.Point(837, 18);
+            this.btn_searchMovie.Name = "btn_searchMovie";
+            this.btn_searchMovie.Size = new System.Drawing.Size(135, 29);
+            this.btn_searchMovie.TabIndex = 2;
+            this.btn_searchMovie.Text = "Film Axtar";
+            this.btn_searchMovie.UseVisualStyleBackColor = true;
+            this.btn_searchMovie.Click += new System.EventHandler(this.btn_search_Click);
+            // 
+            // txt_movieName
+            // 
+            this.txt_movieName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txt_movieName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_movieName.Location = new System.Drawing.Point(539, 18);
+            this.txt_movieName.Name = "txt_movieName";
+            this.txt_movieName.Size = new System.Drawing.Size(292, 29);
+            this.txt_movieName.TabIndex = 1;
             // 
             // label1
             // 
@@ -59,43 +80,31 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Filmler";
             // 
-            // txt_movieName
-            // 
-            this.txt_movieName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_movieName.Location = new System.Drawing.Point(355, 18);
-            this.txt_movieName.Name = "txt_movieName";
-            this.txt_movieName.Size = new System.Drawing.Size(292, 29);
-            this.txt_movieName.TabIndex = 1;
-            // 
-            // btn_searchMovie
-            // 
-            this.btn_searchMovie.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btn_searchMovie.Location = new System.Drawing.Point(653, 18);
-            this.btn_searchMovie.Name = "btn_searchMovie";
-            this.btn_searchMovie.Size = new System.Drawing.Size(135, 29);
-            this.btn_searchMovie.TabIndex = 2;
-            this.btn_searchMovie.Text = "Film Axtar";
-            this.btn_searchMovie.UseVisualStyleBackColor = true;
-            // 
             // pnl_movies
             // 
             this.pnl_movies.BackColor = System.Drawing.SystemColors.ControlLight;
             this.pnl_movies.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_movies.Location = new System.Drawing.Point(0, 62);
             this.pnl_movies.Name = "pnl_movies";
-            this.pnl_movies.Size = new System.Drawing.Size(800, 388);
+            this.pnl_movies.Size = new System.Drawing.Size(984, 499);
             this.pnl_movies.TabIndex = 1;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoScroll = true;
+            this.AutoScrollMinSize = new System.Drawing.Size(0, 351);
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.pnl_movies);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(600, 390);
             this.Name = "Form1";
+            this.RightToLeftLayout = true;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FullHD Filmizlesene";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
